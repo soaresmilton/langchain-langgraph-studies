@@ -11,4 +11,4 @@ model = init_chat_model(model_type)
 
 response =  model.invoke("Olá LLM! Como vc vai?")
 
-print(response)
+print(response.content[0]['text'])
