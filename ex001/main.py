@@ -5,9 +5,9 @@ from rich import print
 
 load_dotenv()
 
-google_api_key = os.getenv("GOOGLE_API_KEY")
+model_type = os.getenv("GEMINI_MODEL")
 
-model = init_chat_model('google_genai:gemini-3-flash-preview')
+model = init_chat_model(model_type)
 
 response =  model.invoke("Olá LLM! Como vc vai?")
 
