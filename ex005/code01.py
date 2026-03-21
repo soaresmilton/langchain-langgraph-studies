@@ -36,7 +36,9 @@ system_message = SystemMessage(
     'for something, first look if you have a tool that solves that problem.'
 )
 
-human_message = HumanMessage('Oi, sou Milton Soares!')
+user_input = input("Digite sua mensagem: ")
+
+human_message = HumanMessage(user_input)
 
 messages: list[BaseMessage] = [system_message, human_message]
 
