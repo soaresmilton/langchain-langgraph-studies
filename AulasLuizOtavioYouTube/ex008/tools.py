@@ -1,7 +1,8 @@
 from langchain.tools import BaseTool, tool
+from langgraph.prebuilt.tool_node import ToolRuntime
 
 @tool
-def multiply(a: float, b: float) -> float:
+def multiply(a: float, b: float, runtime: ToolRuntime) -> float:
     """Multiply a * b and returns the result
 
     Args:
