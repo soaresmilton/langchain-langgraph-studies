@@ -5,7 +5,7 @@ from langchain.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from state import State
 from tools import TOOLS
-from response_format import ListResponseStructure
+from response_format import StructuredResponseList
 
 load_dotenv()
 
@@ -14,7 +14,7 @@ llm = ChatGoogleGenerativeAI(
     temperature=1
 )
 
-agent = create_agent(model=llm, tools=TOOLS, response_format=ListResponseStructure)
+agent = create_agent(model=llm, tools=TOOLS, response_format=StructuredResponseList)
 
 def main() -> None:
     human_message = HumanMessage(input("Faça sua pesquisa: "))

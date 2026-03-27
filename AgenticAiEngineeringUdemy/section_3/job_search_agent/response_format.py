@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import List, Union
 
-class BaseResponseStructure(BaseModel):
+class StructuredResponseBase(BaseModel):
     """Job information scheme."""
     
     job_title: str = Field(description="Job title of the opportunity")
@@ -10,6 +10,6 @@ class BaseResponseStructure(BaseModel):
     url: str = Field(description="Teh URL  the opportunity")
     
 
-class ListResponseStructure(BaseModel):
+class StructuredResponseList(BaseModel):
     """List all found jobs"""
-    jobs_found: List[BaseResponseStructure] = Field(default_factory=list, description="List with all found jobs")
+    jobs_found: List[StructuredResponseBase] = Field(default_factory=list, description="List with all found jobs")
