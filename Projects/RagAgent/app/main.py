@@ -1,0 +1,1 @@
+# usa os dados, recebe pergunta, chama retriever, chama LLM, responde

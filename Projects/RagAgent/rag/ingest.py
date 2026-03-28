@@ -1,0 +1,1 @@
+# prepara os dados: carrega arquivos, faz chunking, gera embeddings, salva vector store

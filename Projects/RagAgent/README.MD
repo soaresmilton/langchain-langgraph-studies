@@ -1,0 +1,1 @@
+-> Primeiro definimos o loader.py ==> responsável por carregar os arquivos e retorna uma lista de Documentos, onde cada documento é um dicionário com as chaves 'content' e 'metadata'.
