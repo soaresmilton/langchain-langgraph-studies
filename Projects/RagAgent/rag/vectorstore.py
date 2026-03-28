@@ -18,3 +18,15 @@ def create_vectorstore(documents: List[Document]) -> VectorStore:
     )
 
     return vectorstore
+
+
+def load_vectorstore(persist_path: str):
+    """Carrega um vector salvo localmente
+    """
+
+    embeddings = get_embeddings()
+    return FAISS.load_local(
+        persist_path,
+        embeddings,
+        allow_dangerous_deserialization=True
+    )

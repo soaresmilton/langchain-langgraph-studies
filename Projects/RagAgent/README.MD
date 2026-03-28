@@ -11,3 +11,7 @@
 5 - retrieval.py ==> responsável por recuperar os chunks relevantes do banco de dados vetorial com base em uma consulta de texto.
 
 6 - context_builder.py ==> responsável por construir o contexto para a geração de respostas, combinando os chunks recuperados com a consulta do usuário.
+
+7 - ingest.py ==> responsável por orquestrar o processo de ingestão dos documentos, desde o carregamento até a indexação.
+
+8 - main.py ==> responsável por orquestrar o processo de consulta, desde a recuperação dos chunks relevantes até a geração da resposta usando um modelo de linguagem, como o GPT-3.5.
