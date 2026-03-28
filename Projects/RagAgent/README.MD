@@ -9,3 +9,5 @@
 4 - vector_store.py ==> responsável por armazenar os vetores de embedding em um banco de dados vetorial, como o FAISS, para permitir a recuperação eficiente.
 
 5 - retrieval.py ==> responsável por recuperar os chunks relevantes do banco de dados vetorial com base em uma consulta de texto.
+
+6 - context_builder.py ==> responsável por construir o contexto para a geração de respostas, combinando os chunks recuperados com a consulta do usuário.
