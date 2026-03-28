@@ -7,3 +7,5 @@
 3 - Terceiro passo é o embedding.py ==> responsável por transformar os chunks em vetores numéricos usando um modelo de embedding, como o OpenAI Embeddings.
 
 4 - vector_store.py ==> responsável por armazenar os vetores de embedding em um banco de dados vetorial, como o FAISS, para permitir a recuperação eficiente.
+
+5 - retrieval.py ==> responsável por recuperar os chunks relevantes do banco de dados vetorial com base em uma consulta de texto.
