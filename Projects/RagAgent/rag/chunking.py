@@ -2,8 +2,6 @@ from typing import List
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from rag.loader import load_txt_files
-
 def split_documents(
         documents: List[Document],
         chunk_size: int = 500,
