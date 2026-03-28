@@ -5,3 +5,5 @@
 2 - Segundo passo é o chunking.py ==> responsável por dividir os documentos em pedaços menores (chunks) para facilitar a indexação e recuperação.
 
 3 - Terceiro passo é o embedding.py ==> responsável por transformar os chunks em vetores numéricos usando um modelo de embedding, como o OpenAI Embeddings.
+
+4 - vector_store.py ==> responsável por armazenar os vetores de embedding em um banco de dados vetorial, como o FAISS, para permitir a recuperação eficiente.
