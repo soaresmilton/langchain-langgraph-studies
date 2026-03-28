@@ -1,5 +1,3 @@
-from email.encoders import encode_noop
-from importlib import metadata
 from pathlib import Path
 from typing import List
 
